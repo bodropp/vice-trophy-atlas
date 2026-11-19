@@ -4,20 +4,23 @@
 [![rank](https://make.fun/badge/gta6-trophy-guide-01/bodropp/vice-trophy-atlas/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
 [![reward](https://make.fun/badge/gta6-trophy-guide-01/bodropp/vice-trophy-atlas/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
 
-An offline guide + tracker for all **55 PS5 trophies of Grand Theft Auto VI** — an entry for [Make GTA 6 Trophy Guide](https://make.fun/bounty/gta6-trophy-guide-01) on [make.fun](https://make.fun).
+An offline guide and tracker for all **55 PlayStation 5 trophies of Grand Theft Auto VI** — an entry for [Build the best GTA 6 trophy guide](https://make.fun/bounty/gta6-trophy-guide-01) on [make.fun](https://make.fun).
 
-## What it is
+## What you get
 
-- **The data first:** every one of the 55 official trophies with its exact official name, description and grade (1 Platinum, 2 Gold, 6 Silver, 46 Bronze), in `app/data/trophies.json`.
-- **A guide to each trophy in our own words**, citing its sources — what to do, where, and when it can be missed. The game launched 19 Nov 2026, so anything beyond the official description is marked as a reasoned read, never presented as fact.
-- **A roadmap to the platinum** in 7 stages, and a missable verdict built from the official descriptions: no trophy in the list is one-time-only; three story-beat trophies (#20, #45, #47) are flagged as a watch-list.
-- **A tracker:** a checklist saved in the browser (localStorage) with export and import, filters by grade, kind, missable watch-list and earned state, and a spoiler setting that hides story trophies until earned.
-- **Fully offline:** no network requests, no external fonts or images, no Rockstar logo or artwork. Open `app/index.html` in a desktop browser.
+- **Every trophy, checked against the official list** — names, descriptions and grades exactly as PlayStation publishes them (1 platinum, 2 gold, 6 silver, 46 bronze).
+- **A guide to each trophy in our own words**, with its sources named beside it. Each guide says what the official description confirms and what is our reasoned read — the game launched 19 November 2026, so a specific step is never presented as fact unless the official description names it.
+- **A checklist that saves in your browser** (localStorage), with export to JSON and import back. Your progress never leaves your machine.
+- **Filters** by grade, kind and earned state, plus a text search.
+- **A spoiler setting** that hides story trophies — name, description and guide — until you earn them.
+- **A roadmap to the platinum** in 8 ordered stages, and the possibly-missable trophies flagged with when to grab them.
 
 ## Run it
 
-```sh
-node main.ts            # writes /output (or set MAKEFUN_OUTPUT_DIR=out)
-```
+Open `app/index.html` in a desktop browser. No server, no build step, no network — every file the app loads lives under `app/`.
 
-Open `app/index.html` directly, or serve it locally (e.g. `node serve.ts` from the kit, or any static server) and open it in desktop Chrome.
+Hand it in with `MAKEFUN_OUTPUT_DIR=out node main.ts` (Node 22), which copies `app/` and `screenshots/` to the output directory and writes `dossier.json` with the kit's vendored library.
+
+## Sources & honesty
+
+Trophy names, descriptions and grades: the official PlayStation 5 list, as carried by Exophase and cross-checked against PSNProfiles. Guide texts are our own words, written from the official descriptions. Unofficial fan guide — not affiliated with Rockstar Games, Take-Two Interactive or PlayStation, and it uses no Rockstar logo, artwork or game screenshots.
